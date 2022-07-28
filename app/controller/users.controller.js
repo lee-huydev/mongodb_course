@@ -27,6 +27,7 @@ class UserController {
    }
    put(req, res) {
       const { params } = req.params;
+      console.log(req.body)
       const keys = Object.keys(req.body);
       const getAndUpdate = async () => {
          const byPhone = await Users.findOne({ phone: params });

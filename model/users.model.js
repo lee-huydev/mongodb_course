@@ -6,13 +6,7 @@ const Users = new Schema({
    name: { type: String },
    age: { type: Number, min: 18, max: 65 },
    address: { type: String },
-   gender: {
-      type: String,
-      match: [
-         /male$|female$/,
-         'Gender must male or female, please try again ',
-      ],
-   },
+   gender: { type: String },
    phone: { type: String },
    email: {
       type: String,

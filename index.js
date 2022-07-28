@@ -16,6 +16,5 @@ db.connect()
 // Middleware router
 app.use('/users', usersRouter)
 
-
 //
 app.listen(port, ()=> console.log('Server is running at port 5000'))

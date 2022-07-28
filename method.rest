@@ -1,0 +1,30 @@
+@baseUrl = http://localhost:5000
+
+GET {{baseUrl}}/users
+
+###
+PATCH {{baseUrl}}/users/098242222222222
+Content-Type: application/json
+
+{
+    "name": "huy",
+    "age": "30",
+    "gender": "other"
+}
+
+###
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+    "name": "Huy @@",
+    "age": 20,
+    "address": "CT",
+    "gender": "male",
+    "phone": "090922902000",
+    "email": "you12356@gmail.com"
+}
+
+### Delete users by _id
+DELETE {{baseUrl}}/users/62e0f69f43910cc3d48bc726
+
